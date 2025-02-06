@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balloon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        #balloon {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div onclick="grow()"onmouseleave="reduce()" id="balloon" ></div>
+    
+    <script>
+        const balloon = document.getElementById('balloon');
+
+        let size = 200;
+        let colornum = 0;
+        let colors = ['red', 'green', 'blue'];
+        
+
+        function grow() {
+            if (size < 410) {
+                size += 10;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+                colornum = (colornum + 1) % colors.length;
+                balloon.style.backgroundColor = colors[colornum];
+            } else {
+                size = 200;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+                colornum = 0;
+                balloon.style.backgroundColor = colors[colornum];
+            }
+        };
+
+        function reduce() {
+            if (size > 200) {
+                size -= 5;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+                colornum = (colornum - 1 + colors.length) % colors.length;
+                balloon.style.backgroundColor = colors[colornum];
+            }
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.parallax-text {
+    text-align: center;
+}
+
+.textcontent {
+    position: abssolute;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+#first {
+    background-image: url('https://i.imgflip.com/p0a19.jpg');
+}
+
+#second {
+    background-image: url('https://i.pinimg.com/736x/03/80/67/03806763922a0016e75e9a519ae06694.jpg');
+}

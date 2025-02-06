@@ -1,0 +1,19 @@
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+    margin: 10px;
+}
+
+button {
+    font-size: 16px;
+    background: grey;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(64, 64, 244);
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="backgroound.css">
+    <title>background</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="button()">Click me!</button>
+    </div>
+
+    <script>
+        const button = () => {
+            const random_color = '#' + Math.floor(Math.random() * (256 * 256 * 256)).toString(16);
+            document.body.style.backgroundColor = random_color;
+        };
+    </script>
+</body>
+</html>

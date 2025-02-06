@@ -3,21 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>responsive </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive by Setting The Viewport-->
+	<title>responsive</title>
 
     <style>
         table {
-            border: 2px solid #0000;
+            border: 1px solid #0000;
+        }
+        .firstcell {
+            width: 50%;
+            background-color: #00ff99;
+        }
+        .secondcell{
+            width: 50%;
+            background-color: #0099ff;
         }
     </style>
+
     <body>
-        <table style="width: 100%; height: 250px;">
+        <table style="width: 100%; height: 200px;">
             <tr style="text-align: center;">
-                <td style="background-color: #00ff99;">
+                <td class="firstcell">
                     First Cell
                 </td>
-                <td style="background-color: #0099ff;">
+                <td class="secondcell">
                     Second Cell
                 </td>
             </tr>
