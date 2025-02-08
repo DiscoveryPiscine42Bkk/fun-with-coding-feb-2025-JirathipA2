@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to right bottom, #2c3e50, #34495e, #1f2c3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.homepageTopic h2 {
+    font-size: 35px;
+    color: #f39c12;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.homepageTopic h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    margin: 15px 0;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;  
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.profile a {
+    display: block;
+    margin-top: 5px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #393231;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background: #524a49;
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .homepageTopic h1 {
+        font-size: 52px;
+    }
+}
